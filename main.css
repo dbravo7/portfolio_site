@@ -94,8 +94,9 @@ fieldset {
 }
 
 .availability h3 {
+  margin-top: 22px; 
   margin-bottom: 0px; 
-  margin-left: 10px; 
+  margin-left: 12px; 
 }
 
 .availability, .availability_list {
@@ -103,11 +104,12 @@ fieldset {
 }
 
 .availability_list { 
-  margin-top: 60px; 
-  margin-left: -85px; 
+  margin-top: 55px; 
+  margin-left: -90px; 
   list-style: none;
   padding-left: 0px; 
-
+  column-count: 2; 
+  line-height: 1.6; 
 }
 
 .availability_list li {
