@@ -8,12 +8,12 @@
   <title>Portfolio of projects by David Bravo</title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="styelsheet" type="text/css" href="main.css">
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
   <nav role="navigation">
-    <a href="#"><i style="font-size:24px" class="fa">&#xf09b;</i></a>
-    <a href="#"><i style="font-size:24px" class="fa">&#xf08c;</i></a>
+    <a href="#" class="nav_icons"><i style="font-size:24px" class="fa">&#xf09b;</i></a>
+    <a href="#" class="nav_icons"><i style="font-size:24px" class="fa">&#xf08c;</i></a>
     <button type="button" class="dropbtn">
       <div class="bars"></div>
       <div class="bars"></div>
@@ -28,28 +28,33 @@
   </nav>
   <main role="main">
     <header role="banner" class="main_header">
-      <h1>I came. I saw. I coded.<span>~ David</span></h1>
-      <p>I am a web developer that finds great satisfaction in problem solving and building programs that work well.</p>
+      <h1 class="header_h1">I came. I saw. I coded.</h1>
+      <h2>~ David</h2>
+      <p>I am a web developer that finds great satisfaction</br>
+         in problem solving and building programs that</br>
+         work well.</p>
     </header>
 
     <fieldset class="projects">
-      <div class="first_project">Project 1</div>
-      <div class="second_project">Project 2</div>
+      <a href="#"><div class="first_project">Project 1</div></a>
+      <a href="#"><div class="second_project">Project 2</div></a>
     </fieldset>
 
-    <section>
-      <header>
-        <h2>Email</h2>
+    <section class="contact_info">
+      <header class="availability">
+        <h3>Availability</h3>
+      </header>
+      <ul class="availability_list">
+        <li>Full time</li>
+        <li>Part-time</li>
+        <li>Contract</li>
+        <li>Freelance</li>
+        <li>Onsite</li>
+        <li>Remote</li>
+      </ul>
+      <header class="email">
+        <h3 class="email_h3">Email</h3>
           <a href="#">dbravo7@yahoo.com</a>
-        <h2>Availability</h2>
-          <ul>
-            <li>Full time</li>
-            <li>Part-time</li>
-            <li>Contract</li>
-            <li>Freelance</li>
-            <li>Onsite</li>
-            <li>Remote</li>
-          </ul>
       </header>
     </section>
   </main>
