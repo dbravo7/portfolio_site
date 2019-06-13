@@ -3,6 +3,11 @@
   /* border: 1px solid black;  */
 }
 
+body, main {
+  margin: 0; 
+  padding: 0;
+}
+
 nav {
   background-color: grey; 
 }
@@ -26,7 +31,8 @@ nav {
   margin-right: 10px; 
   margin-top: 3px; 
   background-color:grey; 
-  border: none; 
+  border: 1px solid whitesmoke; 
+  border-radius: 3px; 
 }
 
 .bars {
@@ -78,9 +84,10 @@ fieldset {
 }
 
 .contact_info {
+  display: block; 
   width: 100%; 
-  margin-top: 0px; 
-  padding: 5px; 
+  min-height: 100%; 
+  padding: 5px 5px 0px 5px; 
   background-color: grey; 
 }
 
@@ -94,13 +101,12 @@ fieldset {
 }
 
 .availability h3 {
-  margin-top: 22px; 
-  margin-bottom: 0px; 
+  margin-top: 22px;  
   margin-left: 12px; 
 }
 
 .availability, .availability_list {
-  display: inline-block;
+  display: inline-block; 
 }
 
 .availability_list { 
@@ -115,4 +121,67 @@ fieldset {
 .about_p {
   padding: 10px;
   line-height: 1.6;  
+}
+
+@media screen and (min-width: 375px) {
+
+  .first_project, .second_project {
+    height: 200px; 
+
+  }
+
+  .contact_info {
+  
+  }
+}
+
+@media screen and (min-width: 750px) {
+
+  i {
+    padding: 5px; 
+  }
+  
+  .dropbtn {
+    margin-top: 7px; 
+  }
+
+  .main_header p {
+    text-align: center; 
+    font-size: 18px; 
+  }
+
+  .projects {
+    font-size: 32px;   
+  }
+
+  .first_project, .second_project {
+    padding-top: 15%; 
+    height: 300px; 
+  }
+
+  .contact_info {
+    
+  }
+
+  .availability, .email_h3 {
+    font-size: 25px; 
+  }
+
+  .availability_list li, .email_h3 a {
+    font-size: 18px; 
+  }
+
+  .availability {
+    margin-left: 10%; 
+  }
+
+  .availability_list {
+    margin-top: 10%; 
+    margin-left: -19%; 
+    column-gap: 40px; 
+  }
+
+  .email {
+    margin-right: 10%; 
+  }
 }
