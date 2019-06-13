@@ -3,9 +3,13 @@
   /* border: 1px solid black;  */
 }
 
-body, main {
-  margin: 0; 
+html, body { 
   padding: 0;
+  margin: 0; 
+}
+
+body {
+  background-color: grey; 
 }
 
 nav {
@@ -22,8 +26,12 @@ nav {
   color: black; 
 }
 
+.nav_icons, .menu, .dropbtn {
+  cursor: pointer; 
+}
+
 .menu {
-  display: none; 
+  display: none;
 }
 
 .dropbtn {
@@ -44,6 +52,7 @@ nav {
 
 .main_header {
   padding: 5px; 
+  background-color: white; 
 }
 
 .header_h1 {
@@ -62,7 +71,7 @@ nav {
   line-height: 1.6; 
 }
 
-fieldset {
+.projects {
   border: none; 
   margin: 0;
   padding: 0; 
@@ -84,38 +93,30 @@ fieldset {
 }
 
 .contact_info {
-  display: block; 
   width: 100%; 
-  min-height: 100%; 
+  display: flex; 
+  justify-content: space-around; 
   padding: 5px 5px 0px 5px; 
   background-color: grey; 
+  background-size: cover; 
 }
 
 .email {
-  float: right;
-  margin-right: 10px; 
+  padding-left: 10px; 
 }
 
-.availability {
-  float: left; 
-}
 
 .availability h3 {
   margin-top: 22px;  
   margin-left: 12px; 
 }
 
-.availability, .availability_list {
-  display: inline-block; 
-}
-
-.availability_list { 
-  margin-top: 55px; 
-  margin-left: -90px; 
+.availability_list {
   list-style: none;
-  padding-left: 0px; 
   column-count: 2; 
   line-height: 1.6; 
+  margin-top: -5px; 
+  padding-left: 10px;  
 }
 
 .about_p {
@@ -127,19 +128,18 @@ fieldset {
 
   .first_project, .second_project {
     height: 200px; 
-
   }
 
-  .contact_info {
-  
+  .availability {
+    margin-left: 10px; 
+  }
+
+  .email {
+    margin-right: 10px; 
   }
 }
 
-@media screen and (min-width: 750px) {
-
-  i {
-    padding: 5px; 
-  }
+@media screen and (min-width: 500px) {
   
   .dropbtn {
     margin-top: 7px; 
@@ -159,10 +159,6 @@ fieldset {
     height: 300px; 
   }
 
-  .contact_info {
-    
-  }
-
   .availability, .email_h3 {
     font-size: 25px; 
   }
@@ -177,7 +173,6 @@ fieldset {
 
   .availability_list {
     margin-top: 10%; 
-    margin-left: -19%; 
     column-gap: 40px; 
   }
 
@@ -185,3 +180,79 @@ fieldset {
     margin-right: 10%; 
   }
 }
+
+@media screen and (min-width: 700px) {
+  
+  .dropbtn {
+    margin-top: 2px; 
+  }
+  .first_project, .second_project {
+    width: 50%; 
+  }
+
+  .first_project {
+    float: left; 
+    background-color: darkgrey;
+  }
+
+  .second_project {
+    float: right; 
+  }
+
+  .availability h3, .email_h3 {
+    font-size: 32px; 
+  }
+
+  .availability {
+    margin-top: 23px; 
+  }
+
+  .availability h3 {
+    margin-top: 10px; 
+  }
+
+  .availability_list li, .email a {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+
+  .dropbtn {
+    display: none; 
+  }
+
+  .nav_icons {
+    padding: 10px; 
+  }
+  .menu {
+    display: inline-block;  
+    font-size: 20px; 
+    float:right;
+    margin-right: 5%;
+  }
+
+  .menu a {
+    text-decoration: none; 
+    color: black; 
+    padding: 10px 30px; 
+  }
+
+  /* .menu a:hover {
+
+  } */
+
+  .projects {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-around;
+    background-color: white; 
+
+  }
+
+  .first_project, .second_project {
+    margin: 40px; 
+    width: 400px; 
+  }
+}
+
