@@ -189,7 +189,6 @@ nav {
 }
 
 .availability_list {
-  /* margin-top: 5%;  */
   line-height: 1.6;     
 }
 
@@ -217,10 +216,20 @@ td {
   .email_h3 {
     margin-bottom: 12%; 
   }
+
+  .availability {
+    margin-right: 3%; 
+  }
 }
 
 @media screen and (min-width: 600px) {
   
+
+  .far {
+    top: 55px; 
+    right: 55px;
+  }
+
   .nav_icons {
     top: 20px;  
     left: 20px; 
@@ -272,17 +281,27 @@ td {
   .availability_list li, .email_h3 a {
     font-size: 18px; 
   }
+}
 
-  .email_h3 a {
+@media screen and (min-width: 740px) {
+  
+  .far {
+    font-size: 32px; 
+    right: 75px;
+    top: 45px;  
+  }
+
+  .email, .availability {
+    margin-top: 5%; 
+  }
+  .email_h3, .availability header h3 {
+    font-size: 32px;
     margin-top: 0px; 
   }
 
-}
-
-@media screen and (min-width: 700px) {
-  
-
- 
+  .email a, td {
+    font-size: 20px; 
+  }
 }
 
 @media screen and (min-width: 950px) {
@@ -294,17 +313,22 @@ td {
   .nav_icons {
     padding: 10px; 
   }
+  
   .menu {
     display: inline-block;  
     font-size: 20px; 
     float:right;
     margin-right: 5%;
+    margin-top: 2%; 
+    
   }
 
   .menu a {
     text-decoration: none; 
-    color: black; 
+    font-weight: bold; 
+    color: whitesmoke;
     padding: 10px 30px; 
+    cursor: pointer; 
   }
 
   /* .menu a:hover {
@@ -322,6 +346,10 @@ td {
   .first_project {
     margin: 40px; 
     width: 400px; 
+  }
+
+  .contact_info {
+    justify-content: center; 
   }
 }
 
