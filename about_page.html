@@ -6,34 +6,41 @@
   <meta name="description" content="Software development, web development, and programming projects by David Bravo">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Portfolio of projects by David Bravo</title>
+  <link href="https://fonts.googleapis.com/css?family=Domine|Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+    integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <nav role="navigation">
-    <a href="https://github.com/dbravo7" class="nav_icons"><i style="font-size:24px" class="fa">&#xf09b;</i></a>
-    <a href="https://www.linkedin.com/in/david-bravo-0b65392a/" class="nav_icons"><i style="font-size:24px" class="fa">&#xf08c;</i></a>
-    <button type="button" class="dropbtn">
-      <div class="bars"></div>
-      <div class="bars"></div>
-      <div class="bars"></div>
-    </button>
+  <div class="wrapper">
+    <nav role="navigation">
+      <a href="https://github.com/dbravo7" class="nav_icons">
+        <i class='fab fa-github'></i>
+      </a>
+      <a href="https://www.linkedin.com/in/david-bravo-0b65392a/" class="nav_icons">
+        <i class='fab fa-linkedin'></i>
+      </a>
+      <button type="button" class="dropbtn">
+        <div class="bars"></div>
+        <div class="bars"></div>
+        <div class="bars"></div>
+      </button>
       <div class="menu">
         <a href="about_page.html">About</a>
         <a href="#contact">Contact</a>
-        <a href="#">Quiz App</a>
-        <a href="#">Ruby Chess</a>
+        <a href="quiz_app_page.html">Quiz App</a>
       </div>
-  </nav>
-  <main role="main">
+    </nav>
     <header role="banner" class="main_header">
-      <h1 class="header_h1">I came. I saw. I coded.</h1>
+      <h1 class="header_about">I came. I saw. I coded.</h1>
       <h2>~ David</h2>
     </header>
+  </div>
 
+  <main role="main"></main>
     <section class="about"> 
-      <img src="#" alt="profile picture">
+      <!-- <img src="images/profile.png" alt="profile picture"> -->
         <div class="about_p">
           <p>I am a web developer that finds great satisfaction
           in problem solving and building programs that are dependable.</p>
@@ -47,24 +54,34 @@
           </p>
         </div>
     </section>
+
     <section class="contact_info" name="contact">
-      <header class="availability">
-        <h3>Availability</h3>
-      </header>
-      <ul class="availability_list">
-        <li>Full time</li>
-        <li>Part-time</li>
-        <li>Contract</li>
-        <li>Freelance</li>
-        <li>Onsite</li>
-        <li>Remote</li>
-      </ul>
       <header class="email">
+        <i class='far fa-envelope'></i>
         <h3 class="email_h3">Email</h3>
-          <a href="#">dbravo7@yahoo.com</a>
+        <a href="#">dbravo7@yahoo.com</a>
       </header>
+      <div class="availability">
+        <i class='far fa-calendar-alt'></i>
+        <header>
+          <h3>Availability</h3>
+        </header>
+        <table class="availability_list">
+          <tr>
+            <td>Full time</td>
+            <td>Part-time</td>
+          </tr>
+          <tr>
+            <td>Contract</td>
+            <td>Freelance</td>
+          </tr>
+          <tr>
+            <td>Onsite</td>
+            <td>Remote</td>
+          </tr>
+        </table>
+      </div>
     </section>
   </main>
-
 </body>
 </html>
