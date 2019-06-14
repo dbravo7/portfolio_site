@@ -38,8 +38,9 @@ nav {
   padding: 5px; 
 }
 
-.nav_icons:visited {
-  color: black; 
+.fab {
+  font-size: 20px; 
+  color: white; 
 }
 
 .nav_icons, .menu, .dropbtn {
@@ -103,7 +104,7 @@ nav {
   display: flex; 
   flex-direction: column; 
   justify-content: center; 
-  height: 220px;
+  height: 240px;
   background: linear-gradient(
     rgba(242, 158, 56, 0.85),
     rgba(242, 158, 56, 0.85)
@@ -121,17 +122,20 @@ nav {
 }
 
 .first_proj_h2 {
+  padding-bottom: 0px; 
   color: whitesmoke;
   text-decoration: underline; 
   text-align: left; 
   vertical-align: middle;
-  padding-left: 5%;     
-  height: 25%;  
+  padding-left: 5%;       
 }
 
+.first_proj_h2 h2 {
+  margin-bottom: 0px; 
+}
 
 .proj_icons {
-  margin: 0px; 
+  margin-top: 1.5%; 
   padding-left: 5%; 
   display: flex; 
   flex-direction: row; 
@@ -139,7 +143,7 @@ nav {
 }
 
 .proj_icons li {
-  padding-right: 3px;
+  padding-right: 1.5%;
 }
 
 .contact_info {
@@ -152,43 +156,45 @@ nav {
   background-size: cover; 
 }
 
+.far {
+  position: relative; 
+  border: 2px solid whitesmoke; 
+  border-radius: 20px; 
+  padding: 5px; 
+  top: 48px; 
+  right: 45px; 
+  font-size: 20px; 
+  background: white; 
+  color: rgb(88, 136, 166);  
+}
+
 .email, .email a, 
 .availability h3, 
 .availability_list {
   color: whitesmoke; 
 }
 
-.email {
-  padding-left: 5%; 
+.email, .availability {
+  margin-bottom: 5%;
+  margin-left: 20%;  
 }
 
 .email_h3, .availability header h3 {
-  font-size: 25px 
+  font-size: 20px; 
+  margin-bottom: 5%;  
 }
 
 .email a {
-  margin-top: 5%; 
-  text-decoration: dotted underline; 
-}
-
-.availability h3 {
-  margin-top: 22px;  
-  margin-bottom: 0px; 
-  padding-left: 5%;   
+  text-decoration: dotted underline;  
 }
 
 .availability_list {
-  display: grid; 
-  grid-template-columns: 50% 50%; 
-  grid-gap: -15px; 
-  margin-top: 5%; 
-  list-style: none;
-  line-height: 1.6; 
-  padding-left: 5%;   
+  /* margin-top: 5%;  */
+  line-height: 1.6;     
 }
 
-.availability_list li {
-  width: 70%;  
+td {
+  padding: 0px 50px 0px 0px; 
 }
 
 .about_p {
@@ -199,39 +205,67 @@ nav {
 @media screen and (min-width: 375px) {
 
   .first_project {
-    height: 200px; 
-  }
-
-  .availability {
-    margin-left: 10px; 
-  }
-
-  .email {
-    margin-right: 10px; 
+    height: 260px; 
   }
 }
 
 @media screen and (min-width: 500px) {
+  .contact_info {
+    flex-direction: row; 
+  }
+
+  .email_h3 {
+    margin-bottom: 12%; 
+  }
+}
+
+@media screen and (min-width: 600px) {
   
+  .nav_icons {
+    top: 20px;  
+    left: 20px; 
+  }
+  
+  .fab {
+  font-size: 32px; 
+  }
+
   .dropbtn {
-    margin-top: 7px; 
+    padding-top: 15px; 
+  }
+
+  .bars {
+    height: 4px; 
+    width: 40px; 
+    margin: 6px; 
+  }
+
+  .main_header {
+    margin-top: 30%; 
+  }
+
+  .header_h1 {
+    font-size: 48px; 
+  }
+
+  .main_header h2 {
+    font-size: 30px; 
   }
 
   .main_header p {
     text-align: center; 
-    font-size: 18px; 
+    font-size: 20px; 
   }
 
   .projects {
     font-size: 32px;   
   }
 
-  .first_project {
-    padding-top: 15%; 
-    height: 300px; 
+  .first_project { 
+    height: 450px; 
   }
 
-  .availability, .email_h3 {
+  .availability header h3, .email_h3 {
     font-size: 25px; 
   }
 
@@ -239,49 +273,16 @@ nav {
     font-size: 18px; 
   }
 
-  .availability {
-    margin-left: 10%; 
+  .email_h3 a {
+    margin-top: 0px; 
   }
 
-  .availability_list {
-    margin-top: 10%; 
-    column-gap: 40px; 
-  }
-
-  .email {
-    margin-right: 10%; 
-  }
 }
 
 @media screen and (min-width: 700px) {
   
-  .dropbtn {
-    margin-top: 2px; 
-  }
-  .first_project {
-    width: 50%; 
-  }
 
-  .first_project {
-    float: left; 
-    background-color: darkgrey;
-  }
  
-  .availability h3, .email_h3 {
-    font-size: 32px; 
-  }
-
-  .availability {
-    margin-top: 23px; 
-  }
-
-  .availability h3 {
-    margin-top: 10px; 
-  }
-
-  .availability_list li, .email a {
-    font-size: 20px;
-  }
 }
 
 @media screen and (min-width: 950px) {
