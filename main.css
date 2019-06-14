@@ -9,17 +9,33 @@ html, body {
 }
 
 body {
-  background-color: grey; 
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Domine', serif;
+}
+
+.wrapper {
+    background: linear-gradient(
+    rgba(88, 136, 166, 0.8),
+    rgba(88, 136, 166, 0.8)
+  ),
+  url("images/backdrop1.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat; 
 }
 
 nav {
-  background-color: grey; 
+  background-color: transparent; 
 }
 
 .nav_icons {
   position: relative;
   text-decoration: none; 
   left: 10px; 
+  top: 7px; 
+  padding: 5px; 
 }
 
 .nav_icons:visited {
@@ -31,33 +47,38 @@ nav {
 }
 
 .menu {
-  display: none;
+  display: none; 
 }
 
 .dropbtn {
   float: right; 
   margin-right: 10px; 
   margin-top: 3px; 
-  background-color:grey; 
-  border: 1px solid whitesmoke; 
   border-radius: 3px; 
+  background: transparent; 
+  border: none; 
 }
 
 .bars {
-  height: 5px;
-  width: 15px;
-  border-radius: 3px; 
-  background-color: darkgrey;
+  height: 3px;
+  width: 18px;
+  border-radius: 5px; 
+  background-color: whitesmoke;
+  margin: 3px 0px; 
 }
 
 .main_header {
-  padding: 5px; 
-  background-color: white; 
+  margin-top: 20%; 
+  padding: 5px;  
+}
+
+.header_h1, .main_header h2, .main_header p {
+  color: whitesmoke; 
 }
 
 .header_h1 {
   text-align: center; 
-  font-size: 34px; 
+  font-size: 29px; 
 }
 
 .main_header h2 {
@@ -68,7 +89,8 @@ nav {
 
 .main_header p {
   margin-left: 10px; 
-  line-height: 1.6; 
+  margin-bottom: 20%; 
+  line-height: 1.6;  
 }
 
 .projects {
@@ -77,46 +99,96 @@ nav {
   padding: 0; 
 }
 
-.first_project, .second_project {
-  padding-top: 15%;
-  text-align: center; 
-  vertical-align: middle;
-  height: 150px; 
-}
-
 .first_project {
-  background-color: grey; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  height: 220px;
+  background: linear-gradient(
+    rgba(242, 158, 56, 0.85),
+    rgba(242, 158, 56, 0.85)
+  ),
+  url(images/library-header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; 
+  cursor: pointer; 
 }
 
-.second_project {
-  background-color: lightgrey; 
+.first_project:hover {
+  background: url(images/library-header.jpg);
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
+
+.first_proj_h2 {
+  color: whitesmoke;
+  text-decoration: underline; 
+  text-align: left; 
+  vertical-align: middle;
+  padding-left: 5%;     
+  height: 25%;  
+}
+
+
+.proj_icons {
+  margin: 0px; 
+  padding-left: 5%; 
+  display: flex; 
+  flex-direction: row; 
+  list-style: none; 
+}
+
+.proj_icons li {
+  padding-right: 3px;
 }
 
 .contact_info {
   width: 100%; 
   display: flex; 
+  flex-direction: column; 
   justify-content: space-around; 
   padding: 5px 5px 0px 5px; 
-  background-color: grey; 
+  background-color: rgb(88, 136, 166); 
   background-size: cover; 
 }
 
-.email {
-  padding-left: 10px; 
+.email, .email a, 
+.availability h3, 
+.availability_list {
+  color: whitesmoke; 
 }
 
+.email {
+  padding-left: 5%; 
+}
+
+.email_h3, .availability header h3 {
+  font-size: 25px 
+}
+
+.email a {
+  margin-top: 5%; 
+  text-decoration: dotted underline; 
+}
 
 .availability h3 {
   margin-top: 22px;  
-  margin-left: 12px; 
+  margin-bottom: 0px; 
+  padding-left: 5%;   
 }
 
 .availability_list {
+  display: grid; 
+  grid-template-columns: 50% 50%; 
+  grid-gap: -15px; 
+  margin-top: 5%; 
   list-style: none;
-  column-count: 2; 
   line-height: 1.6; 
-  margin-top: -5px; 
-  padding-left: 10px;  
+  padding-left: 5%;   
+}
+
+.availability_list li {
+  width: 70%;  
 }
 
 .about_p {
@@ -126,7 +198,7 @@ nav {
 
 @media screen and (min-width: 375px) {
 
-  .first_project, .second_project {
+  .first_project {
     height: 200px; 
   }
 
@@ -154,7 +226,7 @@ nav {
     font-size: 32px;   
   }
 
-  .first_project, .second_project {
+  .first_project {
     padding-top: 15%; 
     height: 300px; 
   }
@@ -186,7 +258,7 @@ nav {
   .dropbtn {
     margin-top: 2px; 
   }
-  .first_project, .second_project {
+  .first_project {
     width: 50%; 
   }
 
@@ -194,11 +266,7 @@ nav {
     float: left; 
     background-color: darkgrey;
   }
-
-  .second_project {
-    float: right; 
-  }
-
+ 
   .availability h3, .email_h3 {
     font-size: 32px; 
   }
@@ -250,7 +318,7 @@ nav {
 
   }
 
-  .first_project, .second_project {
+  .first_project {
     margin: 40px; 
     width: 400px; 
   }
