@@ -46,17 +46,14 @@ nav {
   cursor: pointer; 
 }
 
-.menu {
-  display: none; 
-}
-
 .dropbtn {
+  border: 1px solid black; 
   float: right; 
   margin-right: 10px; 
   margin-top: 3px; 
   border-radius: 3px; 
   background: transparent; 
-  border: none; 
+  border: none;
 }
 
 .bars {
@@ -64,7 +61,46 @@ nav {
   width: 18px;
   border-radius: 5px; 
   background-color: whitesmoke;
-  margin: 3px 0px; 
+  margin: 3px 0px;
+}
+
+.menu {
+  background: linear-gradient(
+    rgba(88, 136, 166, 0.9),
+    rgba(88, 136, 166, 0.9));
+  position: absolute; 
+  width: 30%; 
+  top: 4%; 
+
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  margin: 0;
+  padding: 0; 
+  list-style: none; 
+}
+
+.menu ul li {
+  padding: 15px 15px; 
+  margin-right: 0px;
+  margin-left: 0px; 
+}
+
+.menu ul li a {
+  text-decoration: none; 
+  color: whitesmoke;
+  cursor: pointer; 
+}
+
+.menu ul li:hover {
+  background: rgb(138, 155, 166);
+}
+
+.hide {
+  display: none; 
 }
 
 .main_header, .about_header {
@@ -97,7 +133,7 @@ nav {
 .projects {
   border: none; 
   margin: 0;
-  padding: 0; 
+  padding: 0;
 }
 
 .first_project {
@@ -288,6 +324,11 @@ footer {
 }
 
 @media screen and (min-width: 500px) {
+  
+  .menu {
+    width: 22%; 
+  }
+  
   .contact_info {
     flex-direction: row; 
   }
@@ -303,6 +344,10 @@ footer {
 
 @media screen and (min-width: 600px) {
   
+  .menu {
+    top: 9%;
+  }
+
   .proj_icons .fab {
     font-size: 32px; 
   }
@@ -313,7 +358,7 @@ footer {
 
   .bars {
     height: 4px; 
-    width: 40px; 
+    width: 30px; 
     margin: 6px; 
   }
 
@@ -358,6 +403,10 @@ footer {
 
 @media screen and (min-width: 740px) {
   
+  .menu {
+    width: 18%;
+  }
+
   .far {
     font-size: 32px; 
     right: 75px;
@@ -400,11 +449,16 @@ footer {
   }
 
   .menu {
+    background: transparent; 
     display: inline-block;  
     font-size: 20px; 
     float: right;
     margin-right: 5%;
     margin-top: 2%; 
+  }
+
+  .menu ul {
+    flex-direction: row; 
   }
 
   .menu a {
