@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box; 
-  /* border: 1px solid black;  */
 }
 
 html, body { 
@@ -265,7 +264,7 @@ footer {
   margin-right: 5%; 
 }
 
-/* specific styling for first_project_page below */
+/* specific styling for first_project_page */
 
 .about_header h2 {
   padding-bottom: 10%; 
@@ -333,7 +332,6 @@ footer {
   
   .contact_info {
     flex-direction: row; 
-    /* justify-content: space-evenly;  */
   }
 
   .email_h3 {
@@ -501,7 +499,7 @@ footer {
     padding-right: 1.5%; 
   }
 
-  /* specific styling for first_project_page below */
+  /* specific styling for first_project_page */
 
   .quiz_app {
     flex-direction: column;  
@@ -511,7 +509,7 @@ footer {
 @media screen and (min-width: 1024px) {
 
 
-/* specific styling for first_project_page below */
+/* specific styling for first_project_page */
 
   .first_proj_icons {
     padding-left: 2%; 
@@ -526,7 +524,6 @@ footer {
     width: 48%; 
     height: 48%;
   }
-
   
   .first_block, .third_block {
     background: rgb(138, 155, 166);
