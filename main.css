@@ -26,16 +26,6 @@ h1, h2, h3 {
   background-repeat: no-repeat; 
 }
 
-.first_proj_wrapper, .first_project {
-  background: linear-gradient(
-    rgba(242, 158, 56, 0.85),
-    rgba(242, 158, 56, 0.85)
-  ),
-  url("images/library-header.jpg");
-  background-size: cover;
-  background-repeat: no-repeat; 
-}
-
 nav {
   display: flex; 
   justify-content: flex-end; 
@@ -136,6 +126,17 @@ nav {
   padding: 0;
 }
 
+.first_project, .first_proj_wrapper {
+  background: linear-gradient(
+    rgba(242, 158, 56, 0.85),
+    rgba(242, 158, 56, 0.85)
+  ),
+  url("images/library-header.jpg");
+  transition: 2s ease-in-out; 
+  background-size: cover;
+  background-repeat: no-repeat; 
+}
+
 .first_project {
   display: flex; 
   flex-direction: column; 
@@ -147,7 +148,8 @@ nav {
 .first_project:hover {
   background: url("images/library-header.jpg");
   background-size: cover; 
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
+  opacity: 1;  
 }
 
 .first_proj_h2 {
@@ -331,6 +333,7 @@ footer {
   
   .contact_info {
     flex-direction: row; 
+    /* justify-content: space-evenly;  */
   }
 
   .email_h3 {
@@ -425,6 +428,15 @@ footer {
     font-size: 20px; 
   }
 
+  footer {
+    justify-content: center;  
+  }
+
+  .footer_icons {
+    margin-right: 25px; 
+    margin-left: 25px;  
+  }
+
   /* specific styling for about page */
 
   .about_p {
@@ -452,16 +464,20 @@ footer {
     background: transparent; 
     display: inline-block;  
     font-size: 20px; 
-    float: right;
-    margin-right: 5%;
-    margin-top: 2%; 
+    width: 100%;  
+    top: 1%; 
   }
 
   .menu ul {
     flex-direction: row; 
+    justify-content: flex-end
   }
 
-  .menu a {
+  .menu ul li:hover {
+    background: transparent; 
+  }
+
+  .menu ul li a {
     text-decoration: none; 
     font-weight: bold; 
     color: whitesmoke;
@@ -485,26 +501,6 @@ footer {
     padding-right: 1.5%; 
   }
 
-  .contact_info {
-    justify-content: space-around; 
-  }
-
-  .email, .availability {
-    margin-left: 10%; 
-  }
-
-  footer {
-    justify-content: center; 
-  }
-
-  .footer_icons {
-    margin-right: 10%; 
-  }
-
-  .fa-github {
-    margin-left: 0%; 
-  }
-
   /* specific styling for first_project_page below */
 
   .quiz_app {
@@ -513,6 +509,7 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+
 
 /* specific styling for first_project_page below */
 
@@ -546,5 +543,16 @@ footer {
   .first_proj_background p {
     font-size: 20px; 
   }
+
+  .email {
+    margin-left: 8%; 
+  }
 }
 
+@media screen and (min-width: 1320px) {
+  
+  .email {
+    margin-left: 0%; 
+  }
+}
+ 
