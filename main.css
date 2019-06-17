@@ -54,14 +54,17 @@ nav {
   margin: 3px 0px;
 }
 
-.menu {
+.menu, .submenu {
   background: linear-gradient(
     rgba(88, 136, 166, 0.9),
     rgba(88, 136, 166, 0.9));
-  position: absolute; 
-  width: 30%; 
-  top: 4%; 
+}
 
+.menu {
+  position: absolute; 
+  right: 4%; 
+  width: 30%; 
+  top: 3.5%; 
 }
 
 .menu ul {
@@ -79,7 +82,7 @@ nav {
   margin-left: 0px; 
 }
 
-.menu ul li a {
+.menu ul li a, .submenu li a {
   text-decoration: none; 
   color: whitesmoke;
   cursor: pointer; 
@@ -91,6 +94,22 @@ nav {
 
 .hide {
   display: none; 
+}
+
+.dropdown_submenu {
+  position: relative;  
+}
+
+.submenu {
+  visibility: hidden; 
+  position: absolute; 
+  top: 0; 
+  right: 100%;  
+  width: 110%; 
+}
+
+.dropdown_submenu:hover .submenu {
+  visibility: visible; 
 }
 
 .main_header, .about_header {
@@ -483,6 +502,12 @@ footer {
     color: whitesmoke;
     padding: 10px 30px; 
     cursor: pointer; 
+  }
+
+  .submenu {
+    right: 0%; 
+    top: 100%; 
+    width: 100%; 
   }
 
   .projects {
