@@ -1,5 +1,7 @@
 $(document).ready(() => {
 
+  'use strict'; 
+
   $('.dropbtn').click(() => {
     if ($('.menu').hasClass('hide')) {
       $('.menu').slideDown();
@@ -7,5 +9,21 @@ $(document).ready(() => {
       $('.menu').slideUp();
     }
     $('.menu').toggleClass('hide');
+  });
+
+  $('.main_header').click(() => {
+    if (!($('.menu').hasClass('hide'))) {
+      $('.menu').slideUp();
+      $('.menu').toggleClass('hide');
+    }
+  });
+
+  $('.nav').click(function (event) {
+    if (!($('.menu').hasClass('hide')) &&
+      !(this.is('.dropbtn')) &&
+        !(this.is('.menu'))) {
+          $('.menu').slideUp();
+          $('.menu').toggleClass('hide');
+        }
   });
 });
