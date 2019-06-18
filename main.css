@@ -17,8 +17,8 @@ h1, h2, h3 {
 
 .wrapper {
     background: linear-gradient(
-    rgba(88, 136, 166, 0.8),
-    rgba(88, 136, 166, 0.8)
+    rgba(88, 136, 166, 0.48),
+    rgba(88, 136, 166, 0.48)
   ),
   url("images/backdrop1.jpg");
   background-size: cover; 
@@ -433,6 +433,10 @@ footer {
     top: 45px;  
   }
 
+  .main_header {
+    padding-top: 5%; 
+  }
+
   .email, .availability {
     margin-top: 5%; 
   }
@@ -567,6 +571,7 @@ footer {
   .second_block {
     background: transparent; 
     display: flex; 
+    flex-direction: row-reverse;
     align-items: center; 
   }
   
