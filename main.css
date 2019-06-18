@@ -139,6 +139,7 @@ nav {
 
 .projects {
   border: none; 
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -146,7 +147,7 @@ nav {
 .first_project, .first_proj_wrapper {
   background: linear-gradient(
     rgba(242, 158, 56, 0.85),
-    rgba(242, 158, 56, 0.85)
+    #f29e38d9
   ),
   url("images/library-header.jpg");
   background-size: cover;
@@ -539,6 +540,10 @@ footer {
 
 /* specific styling for first_project_page */
 
+
+  .main_header {
+    padding-top: 5%; 
+  }
   .first_proj_icons {
     padding-left: 2%; 
   }
@@ -576,6 +581,14 @@ footer {
 
 @media screen and (min-width: 1320px) {
   
+  .main_header {
+    padding-top: 0%; 
+  }
+
+  .main_header p {
+    padding-top: 3%; 
+  }
+
   .email {
     margin-left: 0%; 
   }

@@ -1,7 +1,7 @@
+"use strict";
+
 $(document).ready(() => {
-
-  'use strict'; 
-
+ 
   $('.dropbtn').click(() => {
     if ($('.menu').hasClass('hide')) {
       $('.menu').slideDown();
