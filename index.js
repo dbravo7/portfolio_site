@@ -11,7 +11,7 @@ $(document).ready(() => {
     $('.menu').toggleClass('hide');
   });
 
-  $('.main_header').click(() => {
+  $('header, main').click(() => {
     if (!($('.menu').hasClass('hide'))) {
       $('.menu').slideUp();
       $('.menu').toggleClass('hide');

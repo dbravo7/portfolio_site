@@ -115,8 +115,12 @@ nav {
   padding-bottom: 5px;
 }
 
-.header_h1, .main_header h2, 
-.about_header h2, .main_header p {
+.project_header {
+  padding-top: 5%; 
+  padding-bottom: 5%; 
+}
+
+.white {
   color: whitesmoke; 
 }
 
@@ -125,7 +129,8 @@ nav {
   font-size: 26px; 
 }
 
-.main_header h2, .about_header h2 {
+.main_header h2, .about_header h2,
+.project_header h2 {
   text-align: center; 
   font-size: 18px; 
   font-style: italic; 
