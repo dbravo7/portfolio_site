@@ -110,6 +110,10 @@ nav {
   visibility: visible; 
 }
 
+.submenu li a { 
+ display: inline-block; 
+}
+
 .main_header, .about_header {
   padding-top: 20%; 
   padding-bottom: 5px;
@@ -124,7 +128,7 @@ nav {
   color: whitesmoke; 
 }
 
-.header_h1 {
+.header_h1, .projects_header_h1 {
   text-align: center; 
   font-size: 26px; 
 }
@@ -428,6 +432,10 @@ footer {
     font-size: 48px; 
   }
 
+  .projects_header_h1 {
+    font-size: 36px; 
+  }
+
   .main_header h2, .about_header h2 {
     font-size: 30px; 
   }
@@ -437,7 +445,7 @@ footer {
     font-size: 20px; 
   }
 
-  .projects_main, .projects {
+  .projects_main {
     font-size: 32px;   
   }
 
