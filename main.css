@@ -103,7 +103,7 @@ nav {
   position: absolute; 
   top: 0; 
   right: 100%;  
-  width: 110%; 
+  width: 130%; 
 }
 
 .dropdown_submenu:hover .submenu {
@@ -147,14 +147,25 @@ nav {
 .first_project, .first_proj_wrapper {
   background: linear-gradient(
     rgba(242, 158, 56, 0.85),
-    #f29e38d9
+    rgba(242, 158, 56, 0.85)
   ),
   url("images/library-header.jpg");
   background-size: cover;
   background-repeat: no-repeat; 
 }
 
-.first_project {
+.second_project {
+  background: linear-gradient(
+    rgba(140, 110, 125, 0.85),
+    rgba(140, 110, 125, 0.85)
+  ),
+  url("images/translation_app/main_page.png");
+  background-position: center center; 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
+
+.first_project, .second_project {
   display: flex; 
   flex-direction: column; 
   justify-content: center; 
@@ -164,12 +175,33 @@ nav {
 
 .first_project:hover {
   background: url("images/library-header.jpg");
-  background-size: cover; 
-  background-repeat: no-repeat;
-  opacity: 1;  
 }
 
-.first_proj_h2 {
+.first_project:hover .first_proj_h2 h2,
+.first_project:hover .first_proj .fab {
+  text-shadow: 2px 2px rgb(242, 158, 56)
+}
+
+.second_project:hover {
+  background: url("images/translation_app/main_page.png");
+  background-position: center center; 
+}
+
+.second_project:hover .second_proj_h2 h2,
+.second_project:hover .second_proj .fab {
+  text-shadow: 2px 2px #8C6E7D;
+}
+
+.second_project:hover .second_proj .fab {
+
+}
+
+.first_project:hover, .second_project:hover {
+  background-size: cover; 
+  background-repeat: no-repeat; 
+}
+
+.first_proj_h2, .second_proj_h2 {
   padding-bottom: 0px; 
   color: whitesmoke;
   text-decoration: underline; 
@@ -178,7 +210,7 @@ nav {
   padding-left: 5%;       
 }
 
-.first_proj_h2 h2 {
+.first_proj_h2 h2, .second_proj_h2 h2 {
   margin-bottom: 0px; 
 }
 
