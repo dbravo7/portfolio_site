@@ -137,11 +137,16 @@ nav {
   line-height: 1.6;  
 }
 
-.projects {
+.projects_main, .projects {
   border: none; 
   height: 100%;
   margin: 0;
   padding: 0;
+  background-color: rgb(121, 149, 166);
+}
+
+.projects_main {
+  background-color: lightgrey;
 }
 
 .first_project, .first_proj_wrapper {
@@ -159,7 +164,7 @@ nav {
     rgba(140, 110, 125, 0.88),
     rgba(140, 110, 125, 0.88)
   ),
-  url("images/translation_app/main_page.png");
+  url("images/translation_app/logo.png");
   background-position: center center; 
   background-size: cover; 
   background-repeat: no-repeat; 
@@ -183,13 +188,13 @@ nav {
 }
 
 .second_project:hover {
-  background: url("images/translation_app/main_page.png");
+  background: url("images/translation_app/logo.png");
   background-position: center center; 
 }
 
 .second_project:hover .second_proj_h2 h2,
 .second_project:hover .second_proj .fab {
-  text-shadow: 2px 2px #8C6E7D;
+  text-shadow: 3px 3px black;
 }
 
 .first_project:hover, .second_project:hover {
@@ -427,11 +432,11 @@ footer {
     font-size: 20px; 
   }
 
-  .projects {
+  .projects_main, .projects {
     font-size: 32px;   
   }
 
-  .first_project { 
+  .first_project, .second_project { 
     height: 450px; 
   }
 
@@ -533,7 +538,9 @@ footer {
     cursor: pointer; 
   }
 
-  .submenu {
+  ul .submenu {
+    display: flex;
+    flex-direction: column; 
     padding: 0; 
     right: 0%; 
     top: 75%; 
@@ -544,16 +551,24 @@ footer {
     padding: 10px; 
   }
 
-  .projects {
+  .projects_main, .projects {
     display: flex; 
     flex-direction: row; 
+  }
+
+  .projects_main {
+    background-color: lightgrey;
+    height: 15em; 
+  }
+
+  .projects {
     justify-content: space-around;
     background-color: rgb(121, 149, 166); 
   }
 
-  .first_project {
-    margin: 40px; 
-    width: 400px; 
+  .first_project, .second_project {
+    width: 50%; 
+    height: 100%; 
   }
 
   .proj_icons li {
