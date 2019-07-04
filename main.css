@@ -584,14 +584,22 @@ footer {
     height: 100%; 
   }
 
-  .proj_icons li {
+  .proj_icons li { 
     padding-right: 1.5%; 
   }
 
-  /* specific styling for first_project_page */
+  /* specific styling for project pages */
 
   .quiz_app {
     flex-direction: column;  
+  }
+
+  .quiz_app_head h2 {
+    font-size: 28px; 
+  }
+
+  .fab {
+    font-size: 20px; 
   }
 }
 
