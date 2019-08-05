@@ -180,9 +180,6 @@ nav {
 }
 
 .first_project, .second_project {
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
   height: 240px;
   cursor: pointer; 
 }
@@ -211,12 +208,18 @@ nav {
   background-repeat: no-repeat; 
 }
 
+.first_project a, .second_project a {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;  
+  height: 100%; 
+  width: 100%; 
+}
+
 .first_proj_h2, .second_proj_h2 {
   padding-bottom: 0px; 
   color: whitesmoke;
   text-decoration: underline; 
-  text-align: left; 
-  vertical-align: middle;
   padding-left: 5%;       
 }
 
